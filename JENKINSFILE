@@ -2,21 +2,14 @@
 pipeline { 
 agent any
 stages {
-    stage ( "QA" ) 
-    echo 'hello world'
-    sh '''#!/bin/bash
-# declare STRING variable
-STRING="Hello World"
-STRING="THERE IS A NEW AUTOMATION TOOL"
-#print variable on a screen
-echo $STRING'''
-stage ('DEV') 
-    echo 'who am i'
-    sh '''#!/bin/bash
-STRING="CLEMENT SHAKIRAT"
-#print variable on a screen
-echo $STRING'''
-
+    stage ( "QA" ) {
+        steps {
+    echo 'hello world..'
 }
-
+    }    
+    stage ('DEV') {
+        steps {
+    echo 'who am i...'
+        }
+    }
 }

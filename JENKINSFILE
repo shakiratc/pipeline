@@ -9,10 +9,11 @@ stages {
     }    
     stage ('DEV') {
         steps {
-            echo 'who am i..' {
+            echo 'who am i' }
+        {
                 sh 'touch /test' 
             }
-        }
+        
     }
     }
 }

@@ -6,7 +6,7 @@ stages {
         steps {
             echo 'hello world..'  } 
         {
-sh echo -e "Hi, please type the word: \c "
+sh echo -e "Hi, please type the word"
 read  word
 echo "The word you entered is: $word"
 echo -e "Can you please enter two words? "

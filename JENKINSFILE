@@ -11,7 +11,7 @@ stages {
         steps {
             echo 'who am i' }
         {
-                sh 'touch /test' 
+                sh 'sudo touch /test' 
             }
         
     }

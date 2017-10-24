@@ -1,4 +1,7 @@
-node {
+#!groovy
+pipeline { 
+agent any
+stages {
     stage "QA"
   sh '''#!/bin/bash
 # declare STRING variable
@@ -12,5 +15,5 @@ STRING="CLEMENT SHAKIRAT"
 #print variable on a screen
 echo $STRING'''
 
-
+}
 }
